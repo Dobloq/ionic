@@ -3,8 +3,9 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list'
-import { LocationPage } from '../pages/location/location'
+import { ListPage } from '../pages/list/list';
+import { LocationPage } from '../pages/location/location';
+import { LocationListPage } from '../pages/locationList/locationList';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,7 +33,8 @@ export class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Locations', component: LocationPage}
+      { title: 'Locations', component: LocationPage},
+      { title: 'LocationList', component: LocationListPage}
     ];
   }
 

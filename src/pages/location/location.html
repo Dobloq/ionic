@@ -13,16 +13,28 @@
   <h3>Pagina para añadir ubicaciones</h3>
 
   <ion-list>
+    <form (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="ubicacion.nombre" name="nombre"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label floating>Nombre</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label>Latitud</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="ubicacion.latitude" name="latitude">{{lat}}</ion-input>
+      </ion-item>
 
+      <ion-item>
+        <ion-label>Longitud</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="ubicacion.longitude" name="longitude">{{long}}</ion-input>
+      </ion-item>
+      <button ion-button type="submit" block>Guardar</button>
+    </form>
   </ion-list>
 
   <p>{{lat}}</p>
   <p>{{long}}</p>
-  <p>{{locs}}</p> 
+  <p>{{locs}}</p>
+  <p>{{prueba}}</p>
 
 </ion-content>

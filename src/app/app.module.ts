@@ -9,6 +9,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { LocationPage } from '../pages/location/location';
+import { LocationListPage } from '../pages/locationList/locationList';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import { IonicStorageModule } from '@ionic/storage';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    LocationPage
+    LocationPage,
+    LocationListPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { IonicStorageModule } from '@ionic/storage';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    LocationPage
+    LocationPage,
+    LocationListPage
   ],
   providers: [
     StatusBar,
