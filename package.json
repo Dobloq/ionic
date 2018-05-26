@@ -49,7 +49,7 @@
       "cordova-plugin-ionic": {
         "APP_ID": "9de0cbb2",
         "CHANNEL_NAME": "Master",
-        "UPDATE_METHOD": "background"
+        "UPDATE_METHOD": "auto"
       }
     }
   }
